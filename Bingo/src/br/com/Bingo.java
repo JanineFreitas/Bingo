@@ -29,7 +29,7 @@ public class Bingo {
 	
 	public void criarCartelas(){
 		for (int i = 0; i < quantidadeCartelas; i++) {
-			cartelas[i] = new Cartela();
+			cartelas[i] = new Cartela(i);
 		}
 	}
 	
@@ -58,7 +58,7 @@ public class Bingo {
 	
 	public void exibirGanhadores(){
 		for (int i = 0; i < cartelasGanhadoras.size(); i++) {
-			System.out.println("Cartela ganhadora id" +cartelasGanhadoras.get(i).getId());
+			System.out.println("Cartela ganhadora id = " +cartelasGanhadoras.get(i).getId());
 			cartelasGanhadoras.get(i).mostrarNumeros();
 		}
 	}

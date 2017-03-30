@@ -6,7 +6,8 @@ public class Cartela {
 	private int numeros[];
 	private int quantidadeCertos;
 	
-	public Cartela(){
+	public Cartela(int id){
+		this.id = id;
 		numeros = new int[15];
 		quantidadeCertos = 0;
 		popularNumeros();
