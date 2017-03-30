@@ -23,7 +23,7 @@ public class Cartela {
 	
 	public void mostrarNumeros(){
 		for (int i = 0; i < numeros.length; i++) {
-			System.out.print(numeros[i] + ", ");
+			System.out.print(numeros[i] + " - ");
 		}
 		System.out.println();
 	}

@@ -8,7 +8,7 @@ public class Globo {
 	public int getNumeroSorteado() {
 		Random gerador = new Random();
 		int j = gerador.nextInt(99);
-		numeroSorteado = j == 0 ? gerador.nextInt(98) : j;
+		numeroSorteado = j == 0 ? this.getNumeroSorteado() : j;
 		return numeroSorteado;
 	}
 
