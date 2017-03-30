@@ -10,7 +10,7 @@ public class Main {
 		
 		while(b1.verificarSeExisteGanhadores()==false){
 			int numero = b1.sortearNumero(posicao);
-			System.out.println(posicao + "- Número sorteado: "+numero);
+			System.out.println(posicao + "- NÃºmero sorteado: "+numero);
 			b1.verificarSeExisteNumeroSorteado(numero);
 			posicao++;
 		}
